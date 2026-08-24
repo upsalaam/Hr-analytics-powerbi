@@ -1,174 +1,171 @@
-# Sales Analytics Dashboard --- Power BI
+# HR Analytics Dashboard — Power BI
 
-![Power
-BI](https://img.shields.io/badge/Power%20BI-Dashboard-F2C811?logo=powerbi&logoColor=black)
-![DAX](https://img.shields.io/badge/DAX-Analysis-5B2C83) ![Data
-Analytics](https://img.shields.io/badge/Data%20Analytics-Portfolio-2E7D32)
+![Power BI](https://img.shields.io/badge/Power%20BI-Dashboard-F2C811?logo=powerbi&logoColor=black)
+![DAX](https://img.shields.io/badge/DAX-Analysis-5B2C83)
+![HR Analytics](https://img.shields.io/badge/HR%20Analytics-People%20Insights-2E7D32)
 
 ## Project Overview
 
-This project is an interactive **Power BI Sales Analytics Dashboard**
-designed to analyze sales performance, product performance, customer
-behavior, and purchasing patterns.
+This project is an interactive **Power BI HR Analytics Dashboard** designed to analyze employee workforce data, salary patterns, employee status, department distribution, gender composition, performance, hiring trends, and experience across job roles.
 
-The dashboard contains two analytical pages, moving from an executive
-overview to deeper product and customer analysis.
+The dashboard contains two analytical pages, moving from an overall HR performance view to detailed employee-level information.
 
 ## Business Questions
 
--   How is overall sales performance changing over time?
--   Which products generate the most sales?
--   Which products have the highest average order value?
--   Which customers contribute the most revenue?
--   How do sales vary across regions?
--   Which payment methods are most commonly used?
--   Is there a relationship between quantity sold and sales?
--   How do different discount levels relate to sales?
+- How many employees are currently in the organization?
+- How many employees are active versus resigned?
+- What is the overall attrition rate?
+- What is the average salary?
+- How is the workforce distributed across departments and gender?
+- How does average salary differ by gender?
+- What is the distribution of employee performance?
+- How has hiring changed over time?
+- Which job roles have the highest average experience?
+- Which departments have the largest number of employees?
 
 ## Dashboard Pages
 
-### Page 1 --- Sales Analytics Dashboard
+### Page 1 — HR Analytics Dashboard
 
-**Purpose:** Executive-level overview of sales performance.
-
-Key elements:
-
--   Total Sales
--   Total Orders
--   Total Quantity
--   Average Order Value
--   Monthly Sales Trend
--   Sales by Product
--   Sales by Region
--   Sales by Gender
--   Sales by Payment Method
--   Top 10 Customers by Sales
--   Sales vs Quantity by Product
--   Interactive Product slicer
-
-### Page 2 --- Product & Customer Analytics
-
-**Purpose:** Deeper analysis of product performance and customer
-contribution.
+**Purpose:** Executive-level overview of workforce structure and HR performance.
 
 Key elements:
 
--   Total Sales
--   Total Orders
--   Average Order Value
--   Top Product Sales
--   Average Order Value by Product
--   Quantity Sold by Product
--   Top 10 Customers by Sales
--   Sales by Discount Level
--   Sales by Product
+- Total Employees
+- Active Employees
+- Total Resigned
+- Average Salary
+- Attrition Rate
+- Employee Gender
+- Average Salary by Gender
+- Performance Distribution
+- Employee by Status
+- Hire Trend
+- Average Experience by Job Role
+- Employees by Department
+- Interactive Department filter
+
+### Page 2 — Employee Details
+
+**Purpose:** Detailed employee-level view for exploring individual workforce records.
+
+Key elements:
+
+- Total Employees
+- Average Age
+- Average Salary
+- Average Experience
+- Employee Detail Table
+- Top 10 Employees by Salary
+- Salary by Month
+- Department filter
+- Status filter
+- Gender filter
 
 ## Key KPIs
 
-  KPI                      Result
-  --------------------- ---------
-  Total Sales             674.52K
-  Total Orders                818
-  Total Quantity               4K
-  Average Order Value      824.60
-  Top Product Sales       217.45K
+| KPI | Result |
+|---|---:|
+| Total Employees | 50 |
+| Active Employees | 21 |
+| Total Resigned | 29 |
+| Average Salary | 2K |
+| Attrition Rate | 58.00% |
+| Average Age | 39.90 |
+| Average Experience | 9.08 |
 
 ## Key Insights
 
-1.  **Total sales reached 674.52K** across 818 orders.
-2.  **Average Order Value is 824.60**, providing a useful measure of
-    revenue generated per order.
-3.  **Laptop is the leading product by sales**, contributing
-    approximately 217.45K.
-4.  Product performance differs depending on the metric: a product can
-    have high quantity sold without generating the highest revenue.
-5.  A small group of customers contributes a substantial share of sales,
-    making customer-level analysis important for retention and growth
-    strategies.
-6.  Regional and payment-method breakdowns provide additional context
-    for understanding how sales are distributed.
+Based on the dashboard:
 
-> **Note:** These insights are based on the current dashboard and
-> dataset and should be interpreted within the scope of the available
-> data.
+1. The workforce contains **50 employees**, with **21 active employees** and **29 resigned employees**.
+2. The current **attrition rate is 58%**, indicating a significant level of employee turnover within the dataset.
+3. The workforce is evenly split by gender, with **25 female and 25 male employees**.
+4. **Sales has the largest employee count**, followed by HR and Finance.
+5. Average salary is approximately **2K**, while average salary by gender is broadly similar.
+6. The performance distribution includes **Excellent, Good, and Average** employee categories.
+7. Average experience varies across job roles, with some roles showing notably higher experience.
+8. Hiring activity changes over time, with visible peaks and declines in the hire trend.
+
+> **Note:** These insights are based on the current dataset and dashboard and should be interpreted within the scope and size of the available employee data.
 
 ## Tools & Skills
 
--   **Microsoft Power BI**
--   **Power Query**
--   **DAX**
--   Data cleaning and transformation
--   KPI development
--   Data visualization
--   Interactive dashboard design
--   Business-oriented data analysis
+- **Microsoft Power BI**
+- **Power Query**
+- **DAX**
+- Data cleaning and transformation
+- KPI development
+- HR analytics
+- Workforce analysis
+- Data visualization
+- Interactive dashboard design
+- Business-oriented data analysis
 
 ## Dashboard Screenshots
 
-After uploading the screenshots, use this structure:
+Use these screenshot names in the `Screenshots/` folder:
 
-``` text
+```text
 Screenshots/
-├── page1-sales-overview.png
-└── page2-product-customer.png
+├── page1-hr-analytics.png
+└── page2-employee-details.png
 ```
 
 Then add:
 
-``` markdown
+```markdown
 ## Dashboard Preview
 
-### Page 1 — Sales Analytics Dashboard
-![Page 1](Screenshots/page1-sales-overview.png)
+### Page 1 — HR Analytics Dashboard
+![Page 1](Screenshots/page1-hr-analytics.png)
 
-### Page 2 — Product & Customer Analytics
-![Page 2](Screenshots/page2-product-customer.png)
+### Page 2 — Employee Details
+![Page 2](Screenshots/page2-employee-details.png)
 ```
 
 ## Repository Structure
 
-``` text
-sales-analytics-powerbi/
+```text
+hr-analytics-powerbi/
 │
 ├── README.md
 │
 ├── PowerBI/
-│   └── Sales_Analytics_Dashboard.pbix
+│   └── HR_Analytics_Dashboard.pbix
 │
 ├── Dataset/
-│   └── sales_data.csv
+│   └── hr_data.csv
 │
 └── Screenshots/
-    ├── page1-sales-overview.png
-    └── page2-product-customer.png
+    ├── page1-hr-analytics.png
+    └── page2-employee-details.png
 ```
 
 ## How to Explore the Project
 
-1.  Open the `.pbix` file in **Power BI Desktop**.
-2.  Review Page 1 for the executive sales overview.
-3.  Navigate to Page 2 for product and customer analysis.
-4.  Use the interactive Product slicer and visual interactions to
-    explore the data.
-5.  Review KPI cards and charts together to identify business patterns.
+1. Open the `.pbix` file in **Power BI Desktop**.
+2. Review Page 1 for the overall HR and workforce overview.
+3. Navigate to Page 2 for employee-level details.
+4. Use the department, status, and gender filters to explore employee segments.
+5. Compare the KPI cards with the charts to identify workforce patterns and HR trends.
 
 ## Portfolio Value
 
-This project demonstrates the ability to move beyond creating charts and
-build a dashboard around **business questions, KPIs, comparative
-analysis, and actionable insights**.
+This project demonstrates the ability to transform employee data into an interactive business intelligence solution focused on **workforce structure, employee turnover, compensation, performance, and hiring trends**.
 
 It showcases practical skills in:
 
--   Data preparation
--   Analytical thinking
--   DAX measures
--   Dashboard storytelling
--   Business intelligence
--   Interactive visualization
+- Data preparation
+- Analytical thinking
+- DAX measures
+- HR KPI development
+- Dashboard storytelling
+- Business intelligence
+- Interactive visualization
 
 ## Author
 
-**\[Abisalaam Hassan Ahmed\]**
+**[Abdisalaam Hassan Ahmed]**
 
-Data Analytics \| Power BI \| SQL \| Excel
+Data Analytics | Power BI | SQL | Excel
